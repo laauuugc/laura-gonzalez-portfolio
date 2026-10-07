@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="A flat Winsor and Newton paintbrush">
+  <g transform="rotate(-38 120 120)">
+    <path d="M114 118h12l4 108c0 6-20 6-20 0z" fill="#2a2522" stroke="#1b1a17" stroke-width="3" stroke-linejoin="round"/>
+    <text x="120" y="176" fill="#e9c46a" font-family="Georgia, serif" font-size="8" letter-spacing="1" text-anchor="middle" transform="rotate(-90 120 176)">WINSOR &amp; NEWTON</text>
+    <path d="M106 84h28l-6 36h-16z" fill="#c9ccd1" stroke="#1b1a17" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M110 96h20M109 104h22" stroke="#8e939a" stroke-width="2"/>
+    <path d="M104 84c-2-22 2-44 4-58h24c2 14 6 36 4 58z" fill="#d9b48a" stroke="#1b1a17" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M108 26h24c1 8 2 14 2 20-8 4-18 4-28 0 0-6 1-12 2-20z" fill="#c2341f" stroke="#1b1a17" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M114 50v30M120 48v32M126 50v30" stroke="#a0805a" stroke-width="1.5"/>
+  </g>
+  <path d="M40 200c20-14 40 6 60-6s30 4 46-4" fill="none" stroke="#c2341f" stroke-width="9" stroke-linecap="round" opacity=".85"/>
+</svg>

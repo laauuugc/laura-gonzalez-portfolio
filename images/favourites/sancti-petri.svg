@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Sunset over the castle of Sancti Petri in Cádiz">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6b26b"/><stop offset=".55" stop-color="#f9d9a0"/><stop offset="1" stop-color="#fbe9c8"/></linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b8fb3"/><stop offset="1" stop-color="#155f7d"/></linearGradient>
+    <clipPath id="c"><rect x="14" y="14" width="212" height="212" rx="106"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect x="0" y="0" width="240" height="240" fill="url(#sky)"/>
+    <circle cx="160" cy="132" r="26" fill="#e8673c"/>
+    <rect x="0" y="140" width="240" height="100" fill="url(#sea)"/>
+    <g stroke="#fbe9c8" stroke-width="2.5" stroke-linecap="round" opacity=".8">
+      <path d="M138 152h44M146 162h30M152 172h18"/>
+      <path d="M30 186h30M70 200h24M150 206h40"/>
+    </g>
+    <path d="M56 142c6-10 22-14 40-12 14 1 22 6 30 12z" fill="#7a5a3a"/>
+    <g fill="#c9a26b" stroke="#1b1a17" stroke-width="2.5" stroke-linejoin="round">
+      <rect x="66" y="104" width="44" height="34"/>
+      <rect x="80" y="82" width="18" height="24"/>
+      <path d="M66 104h44M62 100h52v6H62z"/>
+      <path d="M78 78h22v6H78z"/>
+    </g>
+    <g fill="#1b1a17"><rect x="86" y="90" width="5" height="8" rx="2"/><rect x="74" y="114" width="5" height="8" rx="2"/><rect x="96" y="114" width="5" height="8" rx="2"/></g>
+    <g fill="none" stroke="#1b1a17" stroke-width="2.2" stroke-linecap="round"><path d="M40 66q6-6 12 0q6-6 12 0"/><path d="M180 56q5-5 10 0q5-5 10 0"/></g>
+  </g>
+  <rect x="14" y="14" width="212" height="212" rx="106" fill="none" stroke="#1b1a17" stroke-width="3"/>
+</svg>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Laura Gonzalez</title>
+  <meta name="description" content="Contact Laura Gonzalez for commissions, collaborations or just to say hi.">
+  <meta name="theme-color" content="#f3efe6">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Cpath d=%22M50 6c24 0 44 16 44 42 0 28-22 46-46 46S6 76 6 50 26 6 50 6z%22 fill=%22%23c2341f%22/%3E%3Ctext x=%2250%22 y=%2266%22 font-size=%2246%22 text-anchor=%22middle%22 fill=%22%23f3efe6%22 font-family=%22Georgia,serif%22 font-style=%22italic%22%3Elg%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body data-page="contact" data-pigment="contact">
+<main id="main">
+  <section class="contact-hero wrap">
+    <div>
+      <div data-plaque="contact"></div>
+      <h1 class="display" style="margin-top:18px"><span class="sr-only">Say hello</span><span class="greeting" aria-hidden="true"><span class="on" lang="es">Hola.</span><span lang="es"><em>¿Qué tal?</em></span><span lang="ga"><em>Dia duit.</em></span><span>Hello.</span></span></h1>
+      <p class="lede">Commissions, collaborations, a poster for your society, or just a matcha recommendation. Let’s meet at kilometre zero: my inbox is open.</p>
+      <a class="big-mail link-underline" data-email href="#"></a>
+      <div class="contact-socials" aria-label="Social media"></div>
+    </div>
+    <form class="note-form" aria-labelledby="form-title">
+      <h2 id="form-title">Leave a <em>note</em></h2>
+      <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="field"><label for="f-topic">What’s it about? <span>(optional)</span></label>
+        <select id="f-topic" name="topic"><option>Commission</option><option>Collaboration</option><option>Design project</option><option>Just saying hi</option></select></div>
+      <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" required></textarea></div>
+      <button class="btn" type="submit">Send message <span class="arrow" aria-hidden="true">→</span></button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+</body>
+</html>

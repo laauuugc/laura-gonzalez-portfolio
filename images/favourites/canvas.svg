@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="A canvas on an easel with acrylic paint">
+  <g stroke="#1b1a17" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M120 26v20M78 196l26-64M162 196l-26-64M120 160v62" fill="none"/>
+    <rect x="52" y="44" width="136" height="104" fill="#f6f2ea"/>
+    <path d="M52 140h136v10H52z" fill="#b07a4a"/>
+  </g>
+  <g stroke-linecap="round" fill="none">
+    <path d="M70 120c18-30 34-8 50-28s30-8 52-34" stroke="#1c7fa6" stroke-width="12"/>
+    <path d="M66 70c20 4 30-10 46-4" stroke="#e9c46a" stroke-width="10"/>
+    <path d="M118 128c14-6 30 2 52-10" stroke="#c2341f" stroke-width="9"/>
+    <circle cx="160" cy="70" r="10" stroke="#3e6b3a" stroke-width="9"/>
+  </g>
+  <g stroke="#1b1a17" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M24 214l40-10 4 12-40 10z" fill="#c2341f"/><path d="M64 204l10-2 2 12-8 2z" fill="#c9ccd1"/>
+    <path d="M168 220l40 4-2 12-40-4z" fill="#1c7fa6"/><path d="M208 224l10 1-1 12-10-1z" fill="#c9ccd1"/>
+  </g>
+</svg>
