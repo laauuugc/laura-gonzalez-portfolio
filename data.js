@@ -69,18 +69,22 @@ const PROJECTS = [
     section: 'client',
     title: 'Freshers’ Week Poster Series',
     client: 'Netsoc',
-    year: '2025',
+    year: '2024 & 2025',
     disciplines: ['Poster design', 'Campaign'],
-    summary: 'One system, three nights, three colours.',
+    summary: 'One system, two Freshers’ Weeks, six colours.',
     description: [
       'A poster series for Netsoc’s Freshers’ Week. Every poster shares the same skeleton: a bold “Freshers” header, a starburst frame, the logo running vertically down the side and a glowing day stamp in the corner.',
       'Each night gets its own colour and a mascot dressed for the occasion: a bubble-tea Netbot for Bubble Sort, a party Netbot for the pub crawl and an Among Us Patch for game night.',
+      'I designed the series for two Freshers’ Weeks, in 2024 and 2025. The second run kept the same system with new nights: a suited-up Patch for a Big Tech careers talk, Netbot sipping through a bubble tea afternoon with Kakilang, and Patch and Netbot on a treasure hunt for €25 gift cards.',
     ],
     ratio: 0.800, // width ÷ height of the cover image
     images: [
       { src: 'images/web/freshers-1.jpg', alt: 'Green Freshers poster for “Bubble Sort: Rise to the Top” on Wednesday the 17th, with Netbot drinking bubble tea.' },
       { src: 'images/web/freshers-2.jpg', alt: 'Teal Freshers poster for the pub crawl on Thursday the 18th, with Netbot and Fuzz celebrating in confetti.' },
       { src: 'images/web/freshers-3.jpg', alt: 'Lilac Freshers poster for the Among Us game on Friday the 20th on the Netsoc Discord, with Patch in an Among Us suit.' },
+      { src: 'images/web/freshers-4.jpg', alt: 'Purple Freshers poster for the Netsoc Talks “Breaking Into Big Tech” session on Tuesday the 17th, in the meeting rooms from 3 to 4pm, with Patch in a suit and tie.' },
+      { src: 'images/web/freshers-5.jpg', alt: 'Teal Freshers poster for a Bubble Tea Afternoon with Kakilang on Wednesday the 18th at the Netsoc Freshers stand, with Netbot drinking bubble tea.' },
+      { src: 'images/web/freshers-6.jpg', alt: 'Yellow Freshers poster for a treasure hunt with €25 gift card prizes on Thursday the 19th in Brava Lounge from 4 to 6pm, with Patch holding a telescope on top of Netbot.' },
     ],
   },
   {
@@ -119,6 +123,9 @@ const PROJECTS = [
     ratio: 1.000, // width ÷ height of the cover image
     images: [
       { src: 'images/web/panda-1.jpg', alt: 'Illustration of a smiling panda sitting down, wearing a large yellow captain’s cap with a grey brim, flower embroidery and an SR badge for Skippers Revenge.' },
+      { src: 'images/web/panda-2.jpg', alt: 'The finished black Skippers Revenge t-shirt laid flat, with the panda printed on the chest and the band name printed down the left sleeve.' },
+      { src: 'images/web/panda-3.jpg', alt: 'Close-up of the panda print on the black t-shirt, showing the yellow cap, its flower embroidery and the SR badge.' },
+      { src: 'images/web/panda-4.jpg', alt: 'The Skippers Revenge t-shirt photographed at an angle on a dark wooden table.' },
     ],
   },
   {
