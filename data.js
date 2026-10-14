@@ -123,7 +123,6 @@ const PROJECTS = [
     ratio: 1.000, // width ÷ height of the cover image
     images: [
       { src: 'images/web/panda-1.jpg', alt: 'Illustration of a smiling panda sitting down, wearing a large yellow captain’s cap with a grey brim, flower embroidery and an SR badge for Skippers Revenge.' },
-      { src: 'images/web/panda-2.jpg', alt: 'The finished black Skippers Revenge t-shirt laid flat, with the panda printed on the chest and the band name printed down the left sleeve.' },
       { src: 'images/web/panda-3.jpg', alt: 'Close-up of the panda print on the black t-shirt, showing the yellow cap, its flower embroidery and the SR badge.' },
       { src: 'images/web/panda-4.jpg', alt: 'The Skippers Revenge t-shirt photographed at an angle on a dark wooden table.' },
     ],
