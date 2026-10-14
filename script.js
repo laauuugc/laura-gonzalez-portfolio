@@ -222,7 +222,7 @@ function buildChrome() {
       ${SKYLINE}
       <div class="footer-bottom" ${page === 'contact' ? 'style="margin-top:0;border-top:0;padding-top:0"' : ''}>
         <p>© ${new Date().getFullYear()} ${esc(SITE.name)}. Made in ${esc(SITE.hometown)}, painted in ${esc(SITE.location)}.</p>
-        <ul aria-label="Social media">${socials}</ul>
+        ${socials ? `<ul aria-label="Social media">${socials}</ul>` : ''}
       </div>
     </div>
     <div class="footer-swatches" aria-hidden="true">${Object.values(PIGMENTS).map((p) => `<i style="background:${p.hex}"></i>`).join('')}</div>`;
@@ -739,7 +739,8 @@ function buildContact() {
   $$('[data-email]').forEach((el) => { el.textContent = SITE.email; el.href = `mailto:${SITE.email}`; });
   $$('[data-shop-mail]').forEach((el) => { el.href = `mailto:${SITE.email}?subject=${encodeURIComponent('Tell me when the shop opens')}`; });
   const socials = $('.contact-socials');
-  if (socials) socials.innerHTML = SITE.socials.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}<span class="sr-only"> (opens in a new tab)</span></a>`).join('');
+  if (socials && !SITE.socials.length) socials.remove();
+  else if (socials) socials.innerHTML = SITE.socials.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}<span class="sr-only"> (opens in a new tab)</span></a>`).join('');
 
   const form = $('.note-form');
   if (!form) return;

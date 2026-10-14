@@ -7,12 +7,9 @@ const SITE = {
   email: 'laauuugc@gmail.com',
   location: 'Ireland',
   hometown: 'Madrid',
-  socials: [
-    { name: 'Instagram', url: 'https://www.instagram.com/' },
-    { name: 'TikTok', url: 'https://www.tiktok.com/' },
-    { name: 'LinkedIn', url: 'https://www.linkedin.com/' },
-    { name: 'YouTube', url: 'https://www.youtube.com/' },
-  ],
+  // Add your profile links here, e.g. { name: 'Instagram', url: 'https://www.instagram.com/yourhandle/' }.
+  // While the list is empty, no social links are shown anywhere on the site.
+  socials: [],
 };
 
 /* Each section of the site has its own paint colour ("pigment").
@@ -51,7 +48,7 @@ const PROJECTS = [
     section: 'client',
     title: 'Netbot, Fuzz & Patch',
     client: 'Netsoc',
-    year: '',
+    year: '2024',
     disciplines: ['Character design', 'Illustration'],
     summary: 'A family of three mascots, each with a sheet of expressions.',
     description: [
@@ -72,7 +69,7 @@ const PROJECTS = [
     section: 'client',
     title: 'Freshers’ Week Poster Series',
     client: 'Netsoc',
-    year: '',
+    year: '2025',
     disciplines: ['Poster design', 'Campaign'],
     summary: 'One system, three nights, three colours.',
     description: [
@@ -111,12 +108,13 @@ const PROJECTS = [
     section: 'client',
     title: 'Skippers Revenge Panda',
     client: 'Skippers Revenge',
-    year: '',
+    year: '2026',
     disciplines: ['Illustration', 'Merch design'],
     summary: 'A panda in a captain’s cap for an Irish band’s merch.',
     description: [
       'A commission for the Irish band Skippers Revenge: a contented panda in an oversized, embroidered captain’s cap, complete with a sprig of flowers and an “SR” badge.',
       'The band turned it into their merch, printed on black t-shirts and tote bags. I kept the line work bold and the fills simple so it would still read clearly on dark fabric.',
+      'The band wore the t-shirts at their gigs at Whelan’s and at UCD Battle of the Bands.',
     ],
     ratio: 1.000, // width ÷ height of the cover image
     images: [
@@ -203,7 +201,7 @@ const PROJECTS = [
     section: 'client',
     title: 'Donut Drop × KPMG',
     client: 'Netsoc × KPMG',
-    year: '',
+    year: '2025',
     disciplines: ['Poster design', 'Sponsorship'],
     summary: 'A sponsored giveaway that had to be seen from across campus.',
     description: [
