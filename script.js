@@ -313,6 +313,18 @@ function setupTransitions() {
 /* =====================================================================
    Images: show a primed-canvas box until the file has loaded
    ===================================================================== */
+// Every image in images/web has a lighter 1000px copy in images/web/thumbs.
+// The browser picks the thumbnail when it's sharp enough for the space and the screen,
+// and only downloads the full-size file when it's actually needed.
+const thumbOf = (src) => src.replace('images/web/', 'images/web/thumbs/');
+function responsive(img, src, width) {
+  if (src.startsWith('images/web/')) {
+    img.sizes = `${Math.max(1, Math.ceil(width))}px`;
+    img.srcset = `${thumbOf(src)} 1000w, ${src} 1800w`;
+  }
+  img.src = src;
+}
+
 function loadImages(root = document) {
   $$('.ph[data-src]', root).forEach((ph) => {
     if (ph.querySelector('img')) return;
@@ -324,8 +336,11 @@ function loadImages(root = document) {
     if (ph.dataset.pos) img.style.objectPosition = ph.dataset.pos;
     if (!ph.hasAttribute('data-eager')) img.loading = 'lazy';
     img.onload = () => { ph.classList.add('loaded'); ph.closest('.stretch')?.classList.add('has-img'); };
-    img.onerror = () => img.remove();
-    img.src = ph.dataset.src;
+    // No thumbnail yet? Fall back to the full-size file instead of hiding the image.
+    img.onerror = () => {
+      if (img.srcset) { img.removeAttribute('srcset'); img.removeAttribute('sizes'); img.src = ph.dataset.src; } else img.remove();
+    };
+    responsive(img, ph.dataset.src, ph.getBoundingClientRect().width || 1000);
     ph.append(img);
   });
 }
@@ -607,7 +622,7 @@ function buildProject() {
   const platesClass = (imgs.length === 1 ? 'plates single' : imgs.length === 3 ? 'plates three' : 'plates') + ` is-${frameOf(p)}`;
   const plates = imgs.map((im, i) => {
     return `<figure class="plate">
-      <button type="button" data-i="${i}" aria-label="Open image ${i + 1} of ${imgs.length} full screen"><img src="${esc(im.src)}" alt="${esc(im.alt)}" loading="${i < 2 ? 'eager' : 'lazy'}" decoding="async"></button>
+      <button type="button" data-i="${i}" aria-label="Open image ${i + 1} of ${imgs.length} full screen"><img data-full="${esc(im.src)}" alt="${esc(im.alt)}" loading="${i < 2 ? 'eager' : 'lazy'}" decoding="async"></button>
     </figure>`;
   }).join('');
 
@@ -635,6 +650,10 @@ function buildProject() {
       </nav>
     </div>`;
 
+  $$('.plate img[data-full]', main).forEach((img) => {
+    img.onerror = () => { if (img.srcset) { img.removeAttribute('srcset'); img.removeAttribute('sizes'); img.src = img.dataset.full; } };
+    responsive(img, img.dataset.full, img.parentElement.getBoundingClientRect().width || 1000);
+  });
   setupLightbox(imgs);
 }
 
