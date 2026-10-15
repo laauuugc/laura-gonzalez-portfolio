@@ -3,48 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Art shop | Laura Gonzalez</title>
-  <meta name="description" content="The Laura Gonzalez art shop. Original paintings and prints are coming soon.">
-  <meta name="theme-color" content="#f3efe6">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Cpath d=%22M50 6c24 0 44 16 44 42 0 28-22 46-46 46S6 76 6 50 26 6 50 6z%22 fill=%22%23c2341f%22/%3E%3Ctext x=%2250%22 y=%2266%22 font-size=%2246%22 text-anchor=%22middle%22 fill=%22%23f3efe6%22 font-family=%22Georgia,serif%22 font-style=%22italic%22%3Elg%3C/text%3E%3C/svg%3E">
+  <title>Shop | Laura Gonzalez</title>
+  <meta name="description" content="Original paintings and prints by Laura Gonzalez. The shop is opening soon.">
+  <meta name="theme-color" content="#faf7f0">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22%3E%3Crect width=%2224%22 height=%2224%22 fill=%22%23172251%22/%3E%3Cpath d=%22M12 4.5 14 10l5.5 2-5.5 2-2 5.5-2-5.5L4.5 12 10 10z%22 fill=%22%23faf7f0%22/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&amp;family=Instrument+Serif:ital@0;1&amp;family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Caveat:wght@500;700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap">
   <link rel="stylesheet" href="styles.css">
   <script src="data.js" defer></script>
   <script src="script.js" defer></script>
 </head>
-<body data-page="shop" data-pigment="shop">
+<body data-page="shop">
 <main id="main">
-  <section class="shop-hero wrap">
-    <div>
-      <div data-plaque="shop"></div>
-      <p class="eyebrow" style="margin-top:22px">Art shop · Coming soon <span lang="es">· Próximamente</span></p>
-      <h1 class="display" style="margin-top:18px">The shop is <em>still drying.</em></h1>
-      <p>There’s nothing for sale just yet, but original paintings, prints and other goodies will be here in the future.</p>
-      <a class="btn" href="mailto:hello@lauragonzalez.com?subject=Tell%20me%20when%20the%20shop%20opens" data-shop-mail>Tell me when it opens <span class="arrow" aria-hidden="true">→</span></a>
+  <section class="shop-grid">
+    <div class="shop-copy">
+      <p class="label">Shop · Coming soon</p>
+      <h1 class="display">The shop is still <em>drying.</em></h1>
+      <p class="lede">There’s nothing for sale just yet. Original paintings, prints and smaller pieces will be here soon.</p>
+      <a class="btn" href="mailto:laauuugc@gmail.com?subject=Tell%20me%20when%20the%20shop%20opens" data-shop-mail>Tell me when it opens</a>
     </div>
-    <div class="drip-tube"><svg viewBox="0 0 200 330" aria-hidden="true" focusable="false">
-        <g stroke="#1b1a17" stroke-width="3" stroke-linejoin="round">
-          <path d="M40 20h120l-6 150c-1 10-10 18-20 18H66c-10 0-19-8-20-18z" fill="#f6f2ea"/>
-          <path d="M43 60h114l-4 80H47z" fill="#d9a032"/>
-          <path d="M34 12h132v14H34z" fill="#c9ccd1"/>
-          <path d="M80 188h40v18H80z" fill="#c9ccd1"/>
-        </g>
-        <text x="100" y="98" text-anchor="middle" font-family="Instrument Serif, serif" font-size="22" font-style="italic" fill="#1b1a17">Yellow</text>
-        <text x="100" y="120" text-anchor="middle" font-family="Instrument Serif, serif" font-size="22" font-style="italic" fill="#1b1a17">Ochre</text>
-        <text x="100" y="160" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#4f4a42">PY43 · ACRYLIC</text>
-        <path class="drip" d="M90 206h20v40c0 8-4 12-10 12s-10-4-10-12z" fill="#d9a032" stroke="#1b1a17" stroke-width="3"/>
-        <ellipse class="drop" cx="100" cy="270" rx="7" ry="9" fill="#d9a032" stroke="#1b1a17" stroke-width="2.5"/>
-      </svg></div>
+    <div class="tiled" aria-hidden="true"></div>
   </section>
-  <section class="wrap" aria-labelledby="shelf-title">
-    <h2 class="sr-only" id="shelf-title">What’s coming</h2>
-    <ul class="shelf">
-      <li class="slot"><span class="eyebrow">Shelf 01</span><div><b>Original paintings</b><p>One-of-a-kind acrylics, straight off the easel.</p></div></li>
-      <li class="slot"><span class="eyebrow">Shelf 02</span><div><b>Art prints</b><p>Prints of my favourite digital paintings.</p></div></li>
-      <li class="slot"><span class="eyebrow">Shelf 03</span><div><b>Something small</b><p>Little things for your desk, your walls or a friend.</p></div></li>
-    </ul>
+  <section class="section" aria-labelledby="shelf-title">
+    <div class="wrap intro-grid">
+      <div><p class="label">On the way</p><h2 class="display" id="shelf-title" style="margin-top:16px">What’s <em>coming</em></h2></div>
+      <ol class="shelf">
+        <li><span class="n">01</span><div><b>Original paintings</b><p>One-of-a-kind acrylics, straight off the easel.</p></div></li>
+        <li><span class="n">02</span><div><b>Art prints</b><p>Prints of my favourite gouache and digital paintings.</p></div></li>
+        <li><span class="n">03</span><div><b>Something small</b><p>Little things for your desk, your walls or a friend.</p></div></li>
+      </ol>
+    </div>
   </section>
 </main>
 </body>

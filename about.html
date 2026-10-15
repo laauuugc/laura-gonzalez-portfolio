@@ -4,61 +4,58 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About | Laura Gonzalez</title>
-  <meta name="description" content="About Laura Gonzalez, a Spanish painter, illustrator and designer living in Ireland.">
-  <meta name="theme-color" content="#f3efe6">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Cpath d=%22M50 6c24 0 44 16 44 42 0 28-22 46-46 46S6 76 6 50 26 6 50 6z%22 fill=%22%23c2341f%22/%3E%3Ctext x=%2250%22 y=%2266%22 font-size=%2246%22 text-anchor=%22middle%22 fill=%22%23f3efe6%22 font-family=%22Georgia,serif%22 font-style=%22italic%22%3Elg%3C/text%3E%3C/svg%3E">
+  <meta name="description" content="About Laura Gonzalez, a designer, illustrator and painter from Madrid living in Ireland.">
+  <meta name="theme-color" content="#faf7f0">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22%3E%3Crect width=%2224%22 height=%2224%22 fill=%22%23172251%22/%3E%3Cpath d=%22M12 4.5 14 10l5.5 2-5.5 2-2 5.5-2-5.5L4.5 12 10 10z%22 fill=%22%23faf7f0%22/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&amp;family=Instrument+Serif:ital@0;1&amp;family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Caveat:wght@500;700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap">
   <link rel="stylesheet" href="styles.css">
   <script src="data.js" defer></script>
   <script src="script.js" defer></script>
 </head>
-<body data-page="about" data-pigment="about">
+<body data-page="about">
 <main id="main">
-  <section class="about-hero wrap">
-    <figure class="polaroid">
-      <div class="ph" data-src="images/web/portrait.jpg" data-alt="Portrait of Laura Gonzalez smiling, with dark hair and hoop earrings." data-eager></div>
-      <figcaption aria-hidden="true">hola!</figcaption>
-    </figure>
+  <section class="wrap about-grid">
+    <figure class="portrait"><img src="images/web/portrait.jpg" alt="Portrait of Laura Gonzalez smiling, with dark hair and hoop earrings." width="675" height="1200"></figure>
     <div>
-      <div data-plaque="about"></div>
-      <h1 class="display" style="margin-top:18px">Hola, I’m <em>Laura.</em></h1>
-      <div class="bio">
-        <p>I’m a painter, illustrator and designer from Madrid, now living in Ireland. Every summer growing up was spent in Sancti Petri, Cádiz, and ever since I was 12 I knew I wanted to live in Ireland. So I made it happen.</p>
-        <p>Lately I’ve been painting almost only in acrylics. Alongside that I make digital paintings and design for clients. At Netsoc I started as First Year Rep in my first year of college, then became Graphics Designer and later Graphics Officer. I’m drawn to bold colour, flat shapes and a little bit of drama.</p>
-        <p>When I’m not painting, I’m probably adding another iced matcha to my list or playing <em>folklore</em> on repeat.</p>
+      <p class="label">About</p>
+      <h1 class="display">Hola, I’m <em>Laura.</em></h1>
+      <div class="prose">
+        <p>I’m a designer, illustrator and painter from Madrid, now living in Ireland. Every summer growing up was spent in Sancti Petri, Cádiz, and ever since I was twelve I knew I wanted to live in Ireland. So I made it happen.</p>
+        <p>Lately I’ve been painting almost only in acrylics. Alongside that I paint in gouache, make digital illustrations and design for clients. At Netsoc I started as First Year Rep, then became Graphics Designer and later Graphics Officer.</p>
+        <p>I’m drawn to bold colour, flat shapes and a little bit of drama. When I’m not painting, I’m probably adding another iced matcha to my list or playing <em>folklore</em> on repeat.</p>
       </div>
-      <ul class="roles" aria-label="What I do">
-        <li class="role" style="background:var(--cerulean)">Painter</li>
-        <li class="role" style="background:var(--red)">Illustrator</li>
-        <li class="role" style="background:var(--violet)">Graphic designer</li>
-      </ul>
+      <dl class="facts-list">
+        <div><dt class="label">From</dt><dd>Madrid</dd></div>
+        <div><dt class="label">Living in</dt><dd>Ireland</dd></div>
+        <div><dt class="label">Summers in</dt><dd>Sancti Petri, Cádiz</dd></div>
+        <div><dt class="label">Fuelled by</dt><dd>Iced matcha, oat milk</dd></div>
+      </dl>
     </div>
   </section>
 
-  <section class="wrap" aria-label="Quick facts">
-    <dl class="notes">
-      <div><dt>From</dt><dd>Madrid</dd></div>
-      <div><dt>Summers in</dt><dd>Sancti Petri, Cádiz</dd></div>
-      <div><dt>Living in</dt><dd>Ireland</dd></div>
-      <div><dt>Fuelled by</dt><dd>Iced matcha, oat milk</dd></div>
-    </dl>
-  </section>
-
-  <section class="lines wrap" aria-labelledby="lines-title">
-    <h2 class="display" id="lines-title">Two <em>lines</em> that got me here</h2>
-    <p class="lede">Like the Madrid metro: every line has its stops.</p>
-    <div class="metro" data-line="route"></div>
-    <div class="metro" data-line="netsoc"></div>
-  </section>
-
-  <section class="cabinet-section on-dark" aria-labelledby="cab-title">
+  <section class="section alt" aria-labelledby="path-title">
     <div class="wrap">
-      <p class="eyebrow">Cabinet of curiosities</p>
-      <h2 class="display" id="cab-title">My <em>favourite</em> things.</h2>
-      <p class="lede">Seven objects that say more about me than a bio ever could. Flip a card to read its story.</p>
-      <ul class="cabinet"></ul>
+      <div class="section-head"><div><p class="label">Path</p><h2 class="display" id="path-title">How I got <em>here</em></h2></div></div>
+      <ol class="timeline" aria-label="From Madrid to Ireland">
+        <li><span class="label">Born and raised</span><b>Madrid</b><p>Where it all started.</p></li>
+        <li><span class="label">Every summer</span><b>Sancti Petri, Cádiz</b><p>Where I still find the most peace.</p></li>
+        <li><span class="label">Home now</span><b>Ireland</b><p>A dream since I was twelve.</p></li>
+      </ol>
+      <p class="label timeline-title">At Netsoc</p>
+      <ol class="timeline" aria-label="My roles at Netsoc">
+        <li><span class="label">First year</span><b>First Year Rep</b><p>My first role in the society.</p></li>
+        <li><span class="label">Next</span><b>Graphics Designer</b><p>Designing the society’s posters.</p></li>
+        <li><span class="label">Then</span><b>Graphics Officer</b><p>Leading the society’s graphics.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="fav-title">
+    <div class="wrap">
+      <div class="section-head"><div><p class="label">Favourite things</p><h2 class="display" id="fav-title">Seven things I <em>love</em></h2></div></div>
+      <ul class="favourites"></ul>
     </div>
   </section>
 </main>

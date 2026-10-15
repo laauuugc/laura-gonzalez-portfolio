@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120"><defs><filter id="w" x="-5%" y="-5%" width="110%" height="110%">
+<feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="2" seed="4"/>
+<feDisplacementMap in="SourceGraphic" scale="1.6" xChannelSelector="R" yChannelSelector="G"/></filter></defs><rect width="120" height="120" fill="#f4efe3"/><g filter="url(#w)"><g id="q">
+<circle cx="0" cy="0" r="30" fill="#1c2a66"/>
+<circle cx="0" cy="0" r="21" fill="#f4efe3"/>
+<path d="M0 0 L16 6 L20 0 Z M0 0 L6 16 L0 20 Z" fill="#1c2a66"/>
+<circle cx="0" cy="0" r="7" fill="#5d6fa8"/>
+<path d="M0 46 A46 46 0 0 0 46 0" fill="none" stroke="#1c2a66" stroke-width="3"/>
+<path d="M0 52 A52 52 0 0 0 52 0" fill="none" stroke="#5d6fa8" stroke-width="1.6" stroke-dasharray="2 4"/>
+<path d="M60.0 47.0 C56.0 38.0 50.0 30.0 38.0 28.0 C44.0 36.0 50.0 42.0 60.0 47.0 Z" fill="#1c2a66"/>
+<path d="M47.0 60.0 C38.0 56.0 30.0 50.0 28.0 38.0 C36.0 44.0 42.0 50.0 47.0 60.0 Z" fill="#1c2a66"/>
+<path d="M34.0 34.0 C30.0 26.0 22.0 24.0 18.0 26.0 C22.0 28.0 24.0 32.0 34.0 34.0 Z" fill="#5d6fa8"/>
+<circle cx="60.0" cy="3" r="9" fill="#1c2a66"/>
+<circle cx="60.0" cy="3" r="4" fill="#f4efe3"/>
+<path d="M46.0 0 Q50.0 14 60.0 18 Q70.0 14 74.0 0" fill="none" stroke="#1c2a66" stroke-width="2.2"/>
+<circle cx="38.0" cy="12" r="2.4" fill="#1c2a66"/><circle cx="82.0" cy="12" r="2.4" fill="#1c2a66"/>
+</g><use href="#q" transform="rotate(90 60.0 60.0)"/><use href="#q" transform="rotate(180 60.0 60.0)"/><use href="#q" transform="rotate(270 60.0 60.0)"/>
+<path d="M60.0 44.0 L65.0 55.0 L76.0 60.0 L65.0 65.0 L60.0 76.0 L55.0 65.0 L44.0 60.0 L55.0 55.0 Z" fill="#1c2a66"/>
+<circle cx="60.0" cy="60.0" r="5.5" fill="#f4efe3"/><circle cx="60.0" cy="60.0" r="2.5" fill="#5d6fa8"/>
+</g><rect x="0.5" y="0.5" width="119" height="119" fill="none" stroke="#e2dac8" stroke-width="1"/></svg>

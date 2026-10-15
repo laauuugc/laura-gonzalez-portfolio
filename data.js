@@ -12,17 +12,6 @@ const SITE = {
   socials: [],
 };
 
-/* Each section of the site has its own paint colour ("pigment").
-   `ink` is the text colour that stays readable on top of it. */
-const PIGMENTS = {
-  client:    { name: 'Dioxazine Violet', code: 'PV23',  hex: '#5b3fa8', ink: '#ffffff' },
-  personal:  { name: 'Cadmium Red',      code: 'PR108', hex: '#c2341f', ink: '#ffffff' },
-  paintings: { name: 'Cerulean Blue',    code: 'PB36',  hex: '#17708f', ink: '#ffffff' },
-  shop:      { name: 'Yellow Ochre',     code: 'PY43',  hex: '#d9a032', ink: '#1b1a17' },
-  about:     { name: 'Sap Green',        code: 'PG7',   hex: '#3e6b3a', ink: '#ffffff' },
-  contact:   { name: 'Matcha Latte',     code: 'PG36',  hex: '#9cbf6b', ink: '#1b1a17' },
-};
-
 /* My path through Netsoc — shown on every project with netsoc: true */
 const NETSOC_JOURNEY = {
   intro: 'I joined Netsoc as First Year Rep in my first year of college, then grew into Graphics Designer and, later, Graphics Officer. Most of the society’s look from those years came from my desk.',
@@ -539,43 +528,43 @@ const FAVOURITES = [
   {
     label: 'Favourite place',
     name: 'Sancti Petri, Cádiz',
-    img: 'images/favourites/sancti-petri.svg',
+    img: 'images/favourites/sancti-petri.jpg',
     story: 'I’m from Madrid, but every summer growing up was spent here, and it’s still where I find the most peace. The castle on its little island at sunset is my reset button.',
   },
   {
     label: 'Favourite book',
     name: 'The Seven Husbands of Evelyn Hugo',
-    img: 'images/favourites/evelyn-hugo.svg',
+    img: 'images/favourites/evelyn-hugo.jpg',
     story: 'I actually met Taylor Jenkins Reid, and she signed my copy. It lives on my shelf like a trophy.',
   },
   {
     label: 'Favourite music',
     name: 'folklore, Taylor Swift',
-    img: 'images/favourites/folklore.svg',
+    img: 'images/favourites/folklore.jpg',
     story: 'My favourite album of all time, because I love depressing music. It’s on repeat whenever I’m painting.',
   },
   {
     label: 'Tool I love',
     name: 'Flat Winsor & Newton brush',
-    img: 'images/favourites/brush.svg',
+    img: 'images/favourites/brush.jpg',
     story: 'The first professional brush I ever bought. It couldn’t be more perfect: I use it on everything I paint.',
   },
   {
     label: 'Something meaningful',
     name: 'My Claddagh ring',
-    img: 'images/favourites/claddagh.svg',
+    img: 'images/favourites/claddagh.jpg',
     story: 'Ever since I was 12 I knew I wanted to live in Ireland, and I did it. Now I own a Claddagh ring that I never take off.',
   },
   {
     label: 'Favourite drink',
     name: 'Iced matcha with oat milk',
-    img: 'images/favourites/matcha.svg',
+    img: 'images/favourites/matcha.jpg',
     story: 'One a day, and it instantly makes me 100× happier. I keep a list of every matcha I’ve tried since 2019.',
   },
   {
     label: 'Sketchbook',
     name: 'A blank canvas',
-    img: 'images/favourites/canvas.svg',
+    img: 'images/favourites/canvas.jpg',
     story: 'My sketchbook is a canvas these days. Lately I’ve been working only in acrylics.',
   },
 ];

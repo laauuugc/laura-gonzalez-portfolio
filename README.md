@@ -5,14 +5,14 @@ Open `index.html` in a browser to view the site. No build step.
 ## Editing content
 Almost everything lives in **`data.js`**:
 
-- `SITE`: your name, email and social links (the social links still point to the sites' home pages, so add your profile URLs)
+- `SITE`: your name, email and social links (empty for now; add your profile URLs and they appear in the footer)
 - `PROJECTS`: every client/personal project. Each one gets its own page automatically
   (`project.html?p=<slug>`). Change titles, years and descriptions here.
 - `PAINTINGS`: the canvases on the Paintings page
-- `FAVOURITES`: the cabinet on the About page
+- `FAVOURITES`: the favourite things on the About page
 - `NETSOC_JOURNEY`: your Netsoc roles, shown on every project marked `netsoc: true`
 
-The Madrid street-sign plaques, Spanish-deck suits and metro lines are set up in `script.js` (`PLAQUES`, `LINES`).
+The six pieces under “Recent pieces” on the home page are listed in `SELECTED` at the top of the home section in `script.js`.
 
 ## Adding images
 1. Put the original file in `images/`.
@@ -24,9 +24,14 @@ The Madrid street-sign plaques, Spanish-deck suits and metro lines are set up in
    `sips -s format jpeg -s formatOptions 76 --resampleWidth 1000 images/web/my-file.jpg --out images/web/thumbs/my-file.jpg`
    If you forget the thumbnail, the site falls back to the full-size image; it just loads slower.
 3. Reference `images/web/my-file.jpg` from `data.js`, with a short `alt` description.
-   For personal pieces set `medium: 'Gouache'` or `'Digital'` (for the filter), and `ratio`
-   (image width ÷ height) so the wall can lay it out before it loads.
+   For personal pieces set `medium: 'Gouache'` or `'Digital'` (for the filter).
 
-Paintings: add an entry to `PAINTINGS` in `data.js` and it is hung in the gallery automatically.
+Paintings: add an entry to `PAINTINGS` in `data.js` and it appears on the Paintings page. The first painting is also the one framed on the home page.
 
-The favourite-object drawings are in `images/favourites/` (SVG). Swap in photos by changing `img` in `FAVOURITES`.
+The favourite-object paintings are in `images/favourites/` (640×640 JPEGs). Swap in your own scans by replacing those files, or change `img` in `FAVOURITES`.
+
+## Design system
+
+- **Colours:** navy ink `#172251` on paper `#faf7f0`, with `#f1ebdf` for alternate sections. Defined at the top of `styles.css`.
+- **Type:** Instrument Serif for headings, Instrument Sans for everything else.
+- **Tile:** one azulejo pattern, `images/tiles/azulejo.svg`. Add the class `tiled` to any block to give it the tiled wall. It's used on purpose in only three places (home hero, shop and the footer band), so keep it rare.
