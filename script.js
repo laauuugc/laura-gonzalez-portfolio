@@ -171,6 +171,29 @@ function buildHome() {
 }
 
 /* =====================================================================
+   La baraja: four cards from Heraclio Fournier's 1878 Spanish deck
+   (public domain, Museo Fournier de Naipes), one for each corner of the studio.
+   ===================================================================== */
+function buildBaraja() {
+  const deck = $('.baraja');
+  if (!deck) return;
+  const count = (sec) => PROJECTS.filter((p) => p.section === sec).length;
+  const HAND = [
+    { suit: 'oros', n: 1, es: 'Oros', title: 'Client work', note: `${count('client')} commissions`, href: 'works.html' },
+    { suit: 'copas', n: 2, es: 'Copas', title: 'Personal work', note: `${count('personal')} pieces`, href: 'personal-work.html' },
+    { suit: 'bastos', n: 3, es: 'Bastos', title: 'Paintings', note: `${PAINTINGS.length} canvases`, href: 'paintings.html' },
+    { suit: 'espadas', n: 4, es: 'Espadas', title: 'Contact', note: 'Commissions open', href: 'contact.html' },
+  ];
+  deck.innerHTML = HAND.map((c) => `
+    <li>
+      <a class="naipe" href="${c.href}">
+        <span class="naipe-card"><img src="images/cards/${c.suit}-1878.jpg" alt="" width="720" height="1150" loading="lazy" decoding="async"></span>
+        <span class="naipe-cap"><span class="label" lang="es">${c.es}</span><b>${c.title}</b><span class="naipe-note">${c.note}</span></span>
+      </a>
+    </li>`).join('');
+}
+
+/* =====================================================================
    Works list pages
    ===================================================================== */
 function buildWorks() {
@@ -359,6 +382,7 @@ function fitMastheads() {
 document.addEventListener('DOMContentLoaded', () => {
   buildChrome();
   buildHome();
+  buildBaraja();
   buildWorks();
   buildProject();
   buildPaintings();
