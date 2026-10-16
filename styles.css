@@ -317,7 +317,9 @@ h2.display { font-size: clamp(38px, 4.6vw, 68px); }
 /* ---------- footer ---------- */
 .site-footer { background: var(--ink); color: var(--paper); }
 .footer-band { height: clamp(56px, 7vw, 84px); background: #f4efe3 var(--tile) center / 84px 84px; }
-.footer-main { display: grid; grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(0, .6fr)); gap: 48px; padding-block: clamp(64px, 8vw, 104px) 56px; }
+.footer-mast { padding-block: clamp(40px, 5vw, 64px) clamp(14px, 1.6vw, 22px); border-bottom: 1px solid rgba(250, 247, 240, .2); line-height: 0; }
+.footer-mast .fit { display: inline-block; font: 400 100px/.84 var(--serif); text-transform: uppercase; letter-spacing: -.012em; white-space: nowrap; color: #f4efe3; }
+.footer-main { display: grid; grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(0, .6fr)); gap: 48px; padding-block: clamp(40px, 5vw, 64px) 56px; }
 .footer-main h2 { font-size: clamp(40px, 5vw, 72px); }
 .footer-main .big-mail { margin-top: 28px; font-size: clamp(22px, 2.2vw, 30px); }
 .footer-main .label { color: #c3c8de; }

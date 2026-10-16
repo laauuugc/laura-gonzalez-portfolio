@@ -313,7 +313,7 @@ const PROJECTS = [
       'Two lemons on a leafy branch and a striped orange pepper, outlined in cobalt and set against a splash of blue with tiny stars scattered around.',
       'It’s a still life that refuses to sit still.',
     ],
-    ratio: 0.632, // width ÷ height of the cover image
+    ratio: 1.582, // width ÷ height of the cover image
     images: [
       { src: 'images/web/gouache-lemons.jpg', alt: 'Gouache still life of two lemons on a leafy branch and an orange pepper, outlined in blue, with yellow stars around them.' },
     ],
@@ -331,7 +331,7 @@ const PROJECTS = [
       'A fox dozing with its eyes shut, painted in patches of orange, violet, teal and cream against a lemon-yellow background.',
       'Shadows are violet instead of grey, so the whole thing stays warm and sleepy.',
     ],
-    ratio: 0.629, // width ÷ height of the cover image
+    ratio: 1.589, // width ÷ height of the cover image
     images: [
       { src: 'images/web/gouache-fox.jpg', alt: 'Gouache painting of a sleeping fox in orange, purple and cream patches against a bright yellow background.' },
     ],
@@ -385,7 +385,7 @@ const PROJECTS = [
       'A bird’s-eye view of a beach: turquoise water with curling white wave marks, pebbles and seaweed, and a strip of warm sand scattered with violet stones.',
       'A small study in pattern and rhythm.',
     ],
-    ratio: 0.614, // width ÷ height of the cover image
+    ratio: 1.627, // width ÷ height of the cover image
     images: [
       { src: 'images/web/gouache-shoreline.jpg', alt: 'Gouache painting of a shoreline from above, with turquoise water, white waves, green seaweed and pebbles on golden sand.' },
     ],
@@ -403,7 +403,7 @@ const PROJECTS = [
       'A footballer caught mid overhead kick, body inverted, boot connecting with the ball, against a block of green with loose gold and red pencil lines whipping around him.',
       'Next to it, a quicker sketch, because sketchbook pages never stay neat.',
     ],
-    ratio: 0.612, // width ÷ height of the cover image
+    ratio: 1.635, // width ÷ height of the cover image
     images: [
       { src: 'images/web/gouache-overhead-kick.jpg', alt: 'Gouache painting of a footballer in a striped kit doing an overhead kick against a green background, with a loose sketch beside it.' },
     ],

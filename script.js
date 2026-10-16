@@ -59,6 +59,7 @@ function buildChrome() {
   footer.innerHTML = `
     <div class="footer-band" aria-hidden="true"></div>
     <div class="wrap">
+      <p class="footer-mast" aria-hidden="true"><span class="fit">Laura Gonzalez</span></p>
       <div class="footer-main">
         <div>
           <h2 class="display">Let’s make something <em>together.</em></h2>
@@ -345,6 +346,16 @@ function buildContact() {
 }
 
 /* ===================================================================== */
+// Set the footer name so it runs exactly the width of the page column, like a masthead
+function fitMastheads() {
+  $$('.fit').forEach((el) => {
+    el.style.fontSize = '100px';
+    const text = el.getBoundingClientRect().width;
+    const w = el.parentElement.clientWidth;
+    el.style.fontSize = `${Math.floor(100 * w / text * 0.995 * 10) / 10}px`;
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   buildChrome();
   buildHome();
@@ -354,4 +365,8 @@ document.addEventListener('DOMContentLoaded', () => {
   buildFavourites();
   buildContact();
   loadImages();
+  fitMastheads();
+  document.fonts?.ready.then(fitMastheads);
+  let fitTimer;
+  window.addEventListener('resize', () => { clearTimeout(fitTimer); fitTimer = setTimeout(fitMastheads, 120); });
 });
