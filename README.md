@@ -28,7 +28,7 @@ The six pieces under “Recent pieces” on the home page are listed in `SELECTE
 
 Paintings: add an entry to `PAINTINGS` in `data.js` and it appears on the Paintings page. The first painting is also the one framed on the home page.
 
-The favourite-object paintings are in `images/favourites/` (640×640 JPEGs). Swap in your own scans by replacing those files, or change `img` in `FAVOURITES`.
+The favourite-thing photos are in `images/favourites/` (640×640 square JPEGs; your full-size originals are in `images/originals/favourites/`). To swap one, replace the file with a new square image of the same name, or change `img` in `FAVOURITES`.
 
 ## Design system
 

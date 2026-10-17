@@ -273,7 +273,8 @@ h2.display { font-size: clamp(38px, 4.6vw, 68px); }
 .timeline p { margin-top: 8px; font-size: 15px; color: var(--ink-2); }
 .timeline-title { margin: 48px 0 16px; }
 
-.favourites { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(32px, 3vw, 48px) clamp(20px, 2.4vw, 32px); }
+.favourites { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(36px, 4vw, 56px) clamp(24px, 3vw, 44px); }
+.fav-wrap { width: min(100% - 2 * var(--gutter), 1080px); }
 .fav img { width: 100%; aspect-ratio: 1; object-fit: cover; }
 .fav .label { display: block; margin-top: 16px; }
 .fav h3 { margin-top: 4px; font: 400 24px/1.15 var(--serif); }
@@ -350,7 +351,6 @@ h2.display { font-size: clamp(38px, 4.6vw, 68px); }
 .naipe:focus-visible .naipe-card { outline: 2px solid var(--ink); outline-offset: 6px; }
 .naipe-cap { display: flex; flex-direction: column; gap: 2px; margin-top: 20px; }
 .naipe-cap b { font: 400 26px/1.15 var(--serif); }
-.naipe:hover .naipe-cap b { font-style: italic; }
 .naipe-note { font-size: 14px; color: var(--ink-2); }
 @media (max-width: 860px) {
   .baraja { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 40px; }
@@ -359,7 +359,6 @@ h2.display { font-size: clamp(38px, 4.6vw, 68px); }
 /* ---------- responsive ---------- */
 @media (max-width: 1080px) {
   .grid, .paintings { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .favourites { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .footer-main { grid-template-columns: 1fr 1fr; }
   .footer-main > :first-child { grid-column: 1 / -1; }
 }

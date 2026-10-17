@@ -544,12 +544,6 @@ const FAVOURITES = [
     story: 'My favourite album of all time, because I love depressing music. It’s on repeat whenever I’m painting.',
   },
   {
-    label: 'Tool I love',
-    name: 'Flat Winsor & Newton brush',
-    img: 'images/favourites/brush.jpg',
-    story: 'The first professional brush I ever bought. It couldn’t be more perfect: I use it on everything I paint.',
-  },
-  {
     label: 'Something meaningful',
     name: 'My Claddagh ring',
     img: 'images/favourites/claddagh.jpg',
